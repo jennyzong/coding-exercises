@@ -1,19 +1,18 @@
-let myLeads = []
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
+// reference html elements
+const form = document.getElementById('form');
+const numOneInput = document.getElementById('num1');
+const numTwoInput = document.getElementById('num2');
+const resultText = document.getElementById('result');
 
-inputBtn.addEventListener("click", function() {
-    myLeads.push(inputEl.value)
-    inputEl.value = ""
-    renderLeads()
+// form event listener
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    // we can convert the strings into numbers using the Number() function
+    const numOneVal = Number(numOneInput.value); 
+    const numTwoVal = Number(numTwoInput.value);
+    
+    console.log(`numOneVal is of type: ${typeof numOneVal}, with a value of ${numOneVal}`);
+    console.log(`numTwoVal is of type: ${typeof numTwoVal}, with a value of ${numTwoVal}`);
+    // now the numbers add up correctly
+    resultText.innerText = `${numOneVal} + ${numTwoVal} = ${numOneVal + numTwoVal}`;
 })
-
-function renderLeads() {
-    let listItems = ""
-    for (let i = 0; i < myLeads.length; i++) {
-        // Refactor the code below to use a template string
-        listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
-    }
-    ulEl.innerHTML = listItems  
-}
