@@ -1,6 +1,8 @@
-console.log(  Boolean("")   ) // fale
-console.log(  Boolean("0")  ) // true
-console.log(  Boolean(100)  ) // true
-console.log(  Boolean(null) ) // false
-console.log(  Boolean([0])  ) // true
-console.log(  Boolean(-0)   ) // false
+const welcomeEl = document.getElementById("welcome-el")
+
+// Give the function a parameter, greeting, that replaces "Welcome back"
+function greetUser(greeting) {
+    welcomeEl.textContent = greeting + ", Per Harald Borgen 👋"    
+}
+
+greetUser("Howdy")
