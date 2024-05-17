@@ -1,8 +1,8 @@
-const welcomeEl = document.getElementById("welcome-el")
+// Create a function, add(), that adds two numbers together and returns the sum
 
-function greetUser(greeting, name) {
-    // Rewrite the expression using template literals
-    welcomeEl.textContent = `${greeting}, ${name 👋`
+function add(num1, num2) {
+    return num1 + num2
 }
 
-greetUser("Howdy", "James")
+console.log( add(3, 4)   ) // should log 7
+console.log( add(9, 102) ) // should log 111
