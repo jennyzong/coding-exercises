@@ -1,13 +1,9 @@
-console.log('What is the capital of Peru?')
-
-setTimeout(function(){
-    console.log('Lima!')
-}, 3000)
-
-console.log('Ready for next question?')
-
 /*
 Challenge:
-1. Make the third console.log fire 3 seconds after 
-   the answer appears.
+1. Log out the phrase "Modal Opened!" 
+   after a 1.5 second delay.
 */
+
+setTimeout( function(){
+    console.log("Modal Opened!" )
+}, 1500)
