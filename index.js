@@ -1,11 +1,13 @@
-// Create a function, getFirst(arr), that returns the first item in the array
+console.log('What is the capital of Peru?')
 
-function getFirst(arr) {
-    return arr[0]
-}
+setTimeout(function(){
+    console.log('Lima!')
+}, 3000)
 
-let firstCard = getFirst([10, 2, 5])
+console.log('Ready for next question?')
 
-console.log(firstCard)
-
-// Call it with an array as an argument to verify that it works
+/*
+Challenge:
+1. Make the third console.log fire 3 seconds after 
+   the answer appears.
+*/
