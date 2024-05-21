@@ -23,7 +23,7 @@ form{
     border-radius: 5px;
     box-shadow: 1px 1px 30px 2px whitesmoke;
 }
-
+ 
 label{
     color: #0B3D91;
     color: whitesmoke;
@@ -39,6 +39,18 @@ input{
     border: 1px solid #0891b2;
     padding: 8px;
     border-radius: 5px;  
+}
+
+input[type="submit"], button{
+    margin-top: 10px;
+    padding: 12px 17px;
+    border: none;
+    background-color: #FC3D21;
+    color: #ecfeff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer; 
 }
 
 img{
