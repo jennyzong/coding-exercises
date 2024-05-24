@@ -1,18 +1,32 @@
-const loginForm = document.getElementById('login-form')
+const decrement = document.getElementById('decrement')
+const increment = document.getElementById('increment')
+const quantityDisplay = document.getElementById('quantity-display')
+const cartBtn = document.getElementById('cartBtn')
 
-loginForm.addEventListener('submit', function(e){
-    e.preventDefault()
-    const loginFormData = new FormData(loginForm)
-    
-    const name = loginFormData.get('astronautName')
-    const email = loginFormData.get('astronautEmail')
-    const password = loginFormData.get('astronautPassword')
-    console.log(name, email, password) 
-    
-/* 
-Challenge: 
-1. Log out the email and password from loginFormData.
-*/
+let quantity = 0
 
-
+decrement.addEventListener('click', function(){
+    quantity--
+    if (quantity === 0){
+        decrement.disabled = true
+    }     
+    quantityDisplay.innerText = quantity
 })
+
+increment.addEventListener('click', function(){
+    quantity ++
+    decrement.disabled = false
+    quantityDisplay.innerText = quantity
+})
+ 
+cartBtn.addEventListener('click', function(){
+    console.log(`Your order for ${quantity} pairs of shoes is being processed`)
+/*
+Challenge:
+1. Disable the 'Add to Cart' button when 
+   quantity is at zero. Remember: quantity
+   will be at zero when the page loads!
+*/ 
+})
+
+

@@ -1,46 +1,26 @@
 <html>
 
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+	<link rel="stylesheet" href="index.css">
+</head>
 
-    <body>        
-        <header>
-            <img src="NASA.png">
-        </header>
-        <main>
-            <form id="login-form">
-                <label for="astronautName">Astronaut Name 👩‍🚀</label>
-                <input 
-                    type="text" 
-                    id="astronautName" 
-                    name="astronautName"
-                    placeholder="Neil Armstrong"
-                    required
-                    >
-                <label for="astronautEmail">Astronaut Email</label>
-                <input 
-                    type="email" 
-                    id="astronautEmail" 
-                    name="astronautEmail"
-                    placeholder="n.armstrong@nasa.com"
-                    required
-                    >
-                <label for="astronautPassword">Password</label>
-                <input 
-                    type="password" 
-                    id="astronautPassword" 
-                    name="astronautPassword"
-                    placeholder="******"
-                    required
-                    >
-                <button type="submit">submit</button>
-            </form>    
-        </main>
-        <script src="index.js"></script>
-    </body>
+<body>
+	<div class="container">
+		<div class="img-container">
+			<img src="sneakers.jpeg">
+		</div>
+		<div class="product-details">
+			<h2>Nike Sneakers $400</h2>
+			<div class="buttons">
+				<button class="quantityBtn" id="decrement" disabled>-</button>
+				<span class="quantity-display" id="quantity-display">0</span>
+				<button class="quantityBtn" id="increment">+</button>
+			</div>
+			<button id="cartBtn">Add to Cart 🛒</button>
+		</div>
+	</div> 
+
+	<script src="index.js"></script>
+</body>
 
 </html>
