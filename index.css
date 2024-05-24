@@ -3,59 +3,37 @@ html, body {
     padding: 0;
 }
 
+h4{
+    font-size: 12px;
+}
+
+p{
+    font-weight: bold;
+}
+
 .container{
     display: flex;
-    gap: 40px;
-
-    width: 450px;
-    margin: 20px auto;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-}
-
-h2{
-    margin: 0;
-}
-
-.product-details{
-    display: flex;
-    flex-direction: column;
     gap: 15px;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-button{
-    font-size: 25px;
-    cursor: pointer;
-    padding: 12px;
+.reverse{
+    flex-direction: row-reverse;
 }
 
-.quantityBtn{
-    padding: 5px;
-}
-
-.buttons{
-    display: flex;
-    justify-content: space-between;
-}
-
-.quantityBtn{
-    width: 75px;
-}
-
-.img-container{
-    width: auto;
-
+.img-details{
+    width: 130px;
 }
 
 img{
-    width: 178px;
-    margin: 0;
-    display: block;
+    width: 130px;
 }
 
-.quantity-display{
-    font-size: 32px;
+.btn-controls{
+    text-align: center;
 }
 
-
+button{
+    padding: 7px 17px;
+}
