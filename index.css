@@ -5,50 +5,77 @@ html, body {
 
 body{
     font-family: 'Roboto', sans-serif;
-    color: #0c4a6e;
+    background-color: #e0f2fe;
+}
+
+h3, h4{
+    color:  #0369a1;
+}
+
+h3{
+    margin: 10px 0 0 0;
+    font-size: 20px;
+}
+
+h4{
+    font-size: 15px;
+    margin: 0;
 }
 
 .container{
     display: flex;
-    flex-direction: column;
-    width: 380px;
-    margin: 40px auto;
-    padding: 25px;
-    align-items: center;
-    border: 3px solid #a5f3fc;
-    border-radius: 3px;
-    background-color: deepskyblue;
-}
-
-.message{
-    display: flex;
     gap: 20px;
-    padding: 8px;
-    justify-content: space-between;
-    width: 100%;
-    font-size: 14px;
-    border-radius: 3px;
-    margin-bottom: 3px;
+    width: 670px;
+    margin: 40px auto
 }
 
-.from{
-    width: 95px;
-}
-
-.message-text{
-    width: 200px;
-}
-
-.read{
-    font-weight: 400;
-    border: 2px solid #a5f3fc;
+.product{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 20px;
     background-color: white;
+    box-shadow: 1px 1px 5px 2px #bae6fd;
 }
 
-.unread{
-    font-weight: 800;
-    border: 2px solid #0369a1;
-    background-color: #a5f3fc;
+.btn-container{
+    margin: 0 auto;
+    width: 690px;
 }
 
+button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #38bdf8;
+    color: #f0f9ff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+button:hover{
+    color: #38bdf8;
+    background-color: #f0f9ff;
+}
+
+img{
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #cbd5e1;
+}
+
+.purchased{
+    opacity: 0.5;    
+}
+
+.on-offer{
+    border: 4px solid lime;
+}
+
+.clear-btn{
+    margin-left: 40px;
+    margin-top: 40px; 
+}
