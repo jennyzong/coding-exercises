@@ -1,14 +1,26 @@
-// We can much more easily target pseudo elements like :checked
-const submitBtn = document.getElementById('submit-btn')
+const continueBtn = document.getElementById('continue-btn')
+const acceptTerms = document.getElementById('accept-terms')
+const mailTerm = document.getElementById("mail-term")
 
-submitBtn.addEventListener('click', function(){
-    const checkedRadio = document.querySelector('input[type="radio"]:checked')
-    console.log(checkedRadio.value)
-})
-
+continueBtn.addEventListener('click', function(){
+    
 /*
 Challenge:
-1. Muscle memory exercise: log out 
-   the value of the checked radio 
-   option.
+1. Add a second checkbox to see if a user
+   wants to be added to the mailing list.
+2. If they do, log out "mail accepted" when 
+   the continue button is clicked. If they
+   don't, log out "mail not accapted."
 */
+    if (acceptTerms.checked){
+        console.log("Terms accepted!")    
+    }
+    else{
+        console.log("Terms refused!")         
+    }
+    if(mailTerm.checked){
+        console.log("mail accepted")
+    }else{
+        console.log("mail not accapted")
+    }
+})

@@ -3,39 +3,33 @@ body{
     color: #333;
 }
 
-h3{
-  font-size: 18px;  
+h2{
+    text-align: center;
 }
 
-.radios{
+.terms{
+ width: 250px;
+ margin: 20px auto;
+ max-height: 250px;
+ overflow: scroll;   
+}
+
+img{
+    max-width: 230px;
+}
+
+.controls{
+    text-align: center;
+}
+
+.checkbox-container{
     display: flex;
     flex-direction: column;
-    gap: 5px;
-}
-
-main{
-    width: 340px;
-    margin: 0 auto;
-}
-
-.opponents{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-}
-
-.small{
- font-size: 30px   
-}
-
-.large{ 
- font-size: 70px   
 }
 
 button{
-    width: 50%;
-    margin: 20px auto;
-    padding: 10px 0;
+    margin-top: 10px;
+    padding: 9px 15px;
     cursor: pointer;
+    text-transform: uppercase;
 }
