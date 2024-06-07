@@ -9,26 +9,26 @@ body{
 
 h1{
     margin: 0;
-    font-size: 30px;
+    font-size: 12px;
 }
 
 header{
     display: flex;
-    margin: 20px auto;
+    margin: 15px auto 0 auto;
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 214px;
+    width: 107px;
 }
 
 .title{
     font-family: 'Caesar Dressing', cursive;
     background-color: black;
-    border: 3px solid #ffe600;
+    border: 2px solid #ffe600;
     padding: 3px 7px;
     color: whitesmoke;
     position: absolute;
-    top: 70px
+    top: 35px
 }
 
 .logo{
@@ -36,30 +36,47 @@ header{
     align-items: center;
     justify-content: center; 
     background-color: #f80000;
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    border: 4px solid #ffe600;
+    border: 3px solid #ffe600;
 }
 
 .logo img{
-    width: 100px;
+    width: 50px;
     margin-bottom: 15px;
     margin-right: 10px;
 }
 
-.icons-bar{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 10px;
-    width: 250px;
-    margin: 0 auto;
-}
 
 i{
-    color: #f80000; /* red */
-    font-size: 20px;
-    cursor: pointer;   
+    color: #ffe600;
+    color: whitesmoke;
+    font-size: 18px;
+    cursor: pointer;  
+    padding-right: 15px; 
+}
+
+i:hover{
+    transform: scale(1.2)
+}
+
+.gallery-container{
+    width: 250px;
+    margin: 10px auto;
+}
+
+.gallery-container img{
+    width: 100%;
+}
+
+.img-container{
+    border: 3px solid #ffe600;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+.social-icons-container{
+    padding: 5px;
+    margin-left: 10px;
 }
