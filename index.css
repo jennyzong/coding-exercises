@@ -57,10 +57,6 @@ i{
     padding-right: 15px; 
 }
 
-i:hover{
-    transform: scale(1.2)
-}
-
 .gallery-container{
     width: 250px;
     margin: 10px auto;
@@ -68,7 +64,7 @@ i:hover{
 
 .gallery-container img{
     width: 100%;
-}
+} 
 
 .img-container{
     border: 3px solid #ffe600;
@@ -80,3 +76,12 @@ i:hover{
     padding: 5px;
     margin-left: 10px;
 }
+
+.liked{
+    color: #f80000; /* red */
+}
+
+.shared{
+    color: limegreen; 
+}
+
