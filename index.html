@@ -1,12 +1,23 @@
+<!doctype html>
 <html>
 
-	<head>
-		<link rel="stylesheet" href="index.css">
-	</head>
+<head>
+	<title>Film List App</title>
+	<link rel="stylesheet" href="index.css">
+</head>
 
-	<body>
-		<div class="container" id="container"></div>
-		<script src="index.js" type="module"></script>
-	</body>
+<body>
+	<section class="film-list-app" id="film-list-app">
+        <h1>🍿 Tom's Watchlist</h1>
+		<div class="input-container">
+			<textarea placeholder="Add a film title..." id="film-input"></textarea>
+			<button id="add-btn">Add Film</button>
+		</div>
+		<div class="film-list" id="film-list">
+			<!-- films go here -->
+		</div>
+	</section>
+	<script src="index.js"></script>
+</body>
 
 </html>

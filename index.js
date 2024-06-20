@@ -1,20 +1,17 @@
-import { playlistArr } from '/playlist.js'
+const filmInput = document.getElementById('film-input')
+const addBtn = document.getElementById('add-btn')
+const filmList = document.getElementById('film-list')
 
-const playlistHtml = playlistArr.forEach(function(track){
-    return `
-    <section class="card">
-        <div class="card-start">
-            <img src="/images/${track.albumArt}">
-        </div>
-            <div class="card-mid">
-                <h4 class="card-title">${track.title}</h4>
-                <p class="card-artist">${track.artist}</p>
-            </div>
-        <div class="card-end">
-            <p class="card-menu">...</p>
-        </div>
-    </section>
-    `
-}).join('')
+addBtn.addEventListener('click', function() {
+/*
+Challenge:
+1. Find a way of adding an inputted film to the list 
+   which does not allow malicious JavaScript to be executed.
+2. Implement it. 
+*/
 
-document.getElementById('container').innerHTML = playlistHtml
+    filmList.innerHTML += `
+        <div class="film-item">${filmInput.value}</div>
+        `
+    filmInput.value = ''
+}) 
