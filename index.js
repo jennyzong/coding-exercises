@@ -1,15 +1,15 @@
-/*
-Challenge:
-    1. Convert this function declaration to a function expression.
-*/
-
-function getTheftAlert(numberOfTransactionsHour) {
-    if (numberOfTransactionsHour > 5) {
-        return `You have made ${numberOfTransactionsHour} transactions 
-                in the past hour. We think your card might have been 
-                compromised`
+const speedWarning = (speedLimit, actualSpeed)=> {
+    if( speedLimit < actualSpeed){
+        return `You are going at ${actualSpeed} mph!`
     }
-}
+}    
+console.log(speedWarning(80, 40))
 
-console.log(getTheftAlert(6))
-
+/*
+Challenge
+1. Refactor this function so it only warns drivers 
+   who are going over the speed limit.
+2. The function now needs to take in two parameters. 
+   The first is the speed limit, the second is the 
+   driver's actual speed.
+*/
