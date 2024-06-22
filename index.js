@@ -1,12 +1,14 @@
-const distanceTraveledMiles = [267, 345, 234, 190, 299]
-
-const distanceTraveledKm = distanceTraveledMiles.map( distance => Math.round(distance * 1.6 ))
-
-console.log(distanceTraveledKm)
+const grades = [75, 83, 66, 43, 55, 99, 87, 16, 89, 64, 70, 80, 94, 77, 66, 73]
 
 /*
 Challenge
-1. Refactor this .map method so the inline function is
-   an arrow function. 
-2. Write the least amount of code possible.
+1. Use the .reduce() method to find the total of all of the students grades.
+2. Do some simple maths to log out the class average. 
 */
+
+const totalGrades = grades.reduce(function(total, currentGrade){
+    return total + currentGrade
+})
+
+
+console.log(`The class average is ${totalGrades/grades.length}`)
