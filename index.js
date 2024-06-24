@@ -1,9 +1,13 @@
-import { studentsArr } from '/studentsArr'
+import { itemsBoughtArr } from '/itemsBoughtArr.js'
 
-function calculateClassAverage(studentsArr) {
-    const totalGrades = studentsArr.reduce((total, currentStudent) => 
-          total + currentStudent.grade,0)
-    return totalGrades / studentsArr.length
+function calculateTotalCost(itemsBoughtArr){
+/*
+Challenge:
+1. Use the reduce method to calculate the total 
+   cost of items which have been bought.
+*/
+    const total = 
+    return total
 }
 
-console.log(calculateClassAverage(studentsArr))
+console.log(calculateTotalCost(itemsBoughtArr))
