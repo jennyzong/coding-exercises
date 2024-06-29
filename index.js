@@ -1,25 +1,16 @@
-const averageSharePriceByMonthQ1 = [109.6, 103.3, 89.4]
-const averageSharePriceByMonthQ2 = [109.3, 126.1, 103.3]
-const averageSharePriceByMonthQ3 = [120.8, 102.3, 106.8]
-const averageSharePriceByMonthQ4 = [110.9, 119.8, 113.7]
-
-function findPriceExtremes(arr){
+const jobHunter = {
+    name: 'Tom Chant',
+    username: 'TChant44',
+    workLocation: 'Europe',
+    }
+    
 /*
 Challenge:
-2. Find the highest number from the array 
-   and store it in the const 'highest'. 
-3. Find the lowest number from the array 
-   and store it in the const 'lowest'. 
+1. Make it so that if the jobHunter object does not have 
+   a name property, the username is used instead.
 */
-    const highest = //???
-    const lowest = //???
-    console.log(`The highest average share price was ${highest}`)
-    console.log(`The lowest average share price was ${lowest}`)
-}
+    
+// Complete this line of code 👇
+const jobHunterName = jobHunter.name || jobHunter.username
 
-/*
-Challenge:
-1. Call this function with one array holding 
-   all of the data from the 4 arrays above.
-*/
-findPriceExtremes()
+console.log(`Hey ${jobHunterName}!`)
