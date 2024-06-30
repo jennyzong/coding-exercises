@@ -1,19 +1,25 @@
-const accountBalanceUsd = '$45,000,000,000 🤑💰'
-const swissBankPassCodesArr = [1234,5678,9876,3434]
+/**
+ * Price List
+ * Coffee $2
+ * Sandwiches $5
+ * Salad $4
+ * Lemon Cake $3
+*/
 
-function authenticationCheck(passCode){
+// For example: "You selected Salad. That will be $4"
+
+function selectItem(item) {
+    let price = 0
 /*
 Challenge:
-1. If the passcode passed into authenticationCheck 
-   exists in swissBankPassCodesArr, authenticationCheck 
-   should log out accountBalanceUsd. 
-   
-   If the passcode does not exist in swissBankPassCodesArr 
-   then authenticationCheck need not do anything.
-   
-⚠️ Make sure you short-circuit with &&
-   hint.md for help!
-*/
+1.  Add the remaining price list items as cases.
+*/    
+    switch(item) {
+        case 'coffee':
+            price = 2
+            break    
+    }
+    return `You selected ${item}. That will be $${price}`
 }
 
-authenticationCheck(3434)
+console.log(selectItem('biscuits'))
