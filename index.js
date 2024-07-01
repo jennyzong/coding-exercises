@@ -1,25 +1,9 @@
-/**
- * Price List
- * Coffee $2
- * Sandwiches $5
- * Salad $4
- * Lemon Cake $3
-*/
+const dateSnapshot = new Date()
+console.log(`Copyright ${dateSnapshot.getFullYear().toString()}`)
 
-// For example: "You selected Salad. That will be $4"
 
-function selectItem(item) {
-    let price = 0
 /*
 Challenge:
-1.  Add the remaining price list items as cases.
-*/    
-    switch(item) {
-        case 'coffee':
-            price = 2
-            break    
-    }
-    return `You selected ${item}. That will be $${price}`
-}
-
-console.log(selectItem('biscuits'))
+1. Search online to find out how we can get just the year 
+   using the Date() constructor and update the console.log above.
+*/
