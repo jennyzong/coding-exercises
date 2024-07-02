@@ -1,9 +1,9 @@
-const dateSnapshot = new Date()
-console.log(`Copyright ${dateSnapshot.getFullYear().toString()}`)
+String()
+Number()
+Array()
+Object()
+Boolean()
 
-
-/*
-Challenge:
-1. Search online to find out how we can get just the year 
-   using the Date() constructor and update the console.log above.
-*/
+const person = {}
+person.name = 'Tom'
+console.log(person)
