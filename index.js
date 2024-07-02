@@ -1,9 +1,20 @@
-String()
-Number()
-Array()
-Object()
-Boolean()
+const gamer = {
+    name: 'Dave',
+    score: 0,
+    incrementScore: function(){
+        this.score++   
+    }
+}
 
-const person = {}
-person.name = 'Tom'
-console.log(person)
+const gamer1 = {
+    name: 'Sarah',
+    score: 0,
+    incrementScore: function(){
+        this.score++   
+    }
+}
+
+gamer.incrementScore()
+gamer1.incrementScore()
+console.log(gamer)
+console.log(gamer1)
