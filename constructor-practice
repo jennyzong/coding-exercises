@@ -1,0 +1,16 @@
+function Character(name){
+    this.name = name
+    this.collectedItemsArr = []
+    this.addItem = function(item){
+        this.collectedItemsArr.push(item)
+        console.log(`${this.name} now has: ${this.collectedItemsArr.join(', ')}`)
+    }
+}
+
+const gamer1 = new Character('Merlin')
+const gamer2 = new Character('Hermione')
+wizard.addItem('wand')
+wizard.addItem('map')
+wizard.addItem('potion')
+witch.addItem('potion')
+wizard.addItem('potion')
