@@ -1,0 +1,32 @@
+function Character(name){
+    this.name = name
+    this.collectedItemsArr = []
+    this.addItem = function(item){
+        this.collectedItemsArr.push(item)
+        console.log(`${this.name} now has: ${this.collectedItemsArr.join(', ')}`)
+    }
+}
+
+const gamer1 = new Character('Draco')
+const gamer2 = new Character('Hermione')
+const gamer3 = new Character('Harry')
+const gamer4 = new Character('Ron')
+gamer3.addItem('wand')
+gamer1.addItem('map')
+gamer3.addItem('potion')
+gamer2.addItem('potion')
+gamer4.addItem('potion')
+
+let wizards = [gamer1, gamer2, gamer3, gamer4]
+let r_num_1 = Math.floor(Math.random() * wizards.length())
+let r_num_2 = Math.floor(Math.random() * wizards.length())
+
+if (r_num_1 != r_num_2){
+  if (wizard[r_num_1].collectedItemsArr.contains("wand"){
+    console.log(`{wizard[r_num_1].name} WINS!`)
+  } else if (wizard[r_num_2].collectedItemsArr.contains("wand"){
+    console.log(`{wizard[r_num_2].name} WINS!`)
+  } else{
+    console.log("You both lose")
+  }
+}
