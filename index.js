@@ -1,21 +1,20 @@
-class Gamer {
-    constructor(name, score) {
+/*
+Challenge:
+Rebuild this constructor function as a class.
+*/
+
+
+class Character {
+    constructor(name) {
         this.name = name
-        this.score = score
+        this.collectedItemsArr = []
     }
     
-    incrementScore() {
-        this.score++  
+    addItem(item){
+        this.collectedItemsArr.push(item)
+        console.log(`${this.name} now has: ${this.collectedItemsArr.join(', ')}`)    
     }
 }
 
-const dave = new Gamer('Dave', 0)
-const sarah = new Gamer('Sarah', 0)
-dave.incrementScore()
-console.log(dave)
-console.log(sarah)
-
-
-
-
-
+const wizard = new Character('Merlin')
+wizard.addItem('a wand')
