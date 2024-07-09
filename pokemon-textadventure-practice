@@ -1,0 +1,67 @@
+// Define Pokémon and player objects
+const player = {
+  name: 'Ash',
+  pokemon: null,
+};
+
+const pokemonList = {
+  Bulbasaur: { name: 'Bulbasaur', type: 'Grass', hp: 45, attack: 49 },
+  Charmander: { name: 'Charmander', type: 'Fire', hp: 39, attack: 52 },
+  Squirtle: { name: 'Squirtle', type: 'Water', hp: 44, attack: 48 },
+};
+
+const wildPokemon = { name: 'Pidgey', type: 'Normal', hp: 40, attack: 45 };
+
+// Function to choose a starter Pokémon
+const chooseStarter = (starter) => {
+  player.pokemon = pokemonList[starter];
+  console.log(`You chose ${starter}!`);
+};
+
+// Function to display player's Pokémon stats
+const displayStats = () => {
+  if (player.pokemon) {
+    const { name, type, hp, attack } = player.pokemon;
+    console.log(`Your Pokémon: ${name} (Type: ${type}, HP: ${hp}, Attack: ${attack})`);
+  } else {
+    console.log('You have not chosen a Pokémon yet.');
+  }
+};
+
+// Function to simulate a battle with a wild Pokémon
+const battleWildPokemon = () => {
+  if (player.pokemon) {
+    console.log(`A wild ${wildPokemon.name} appeared!`);
+
+    while (wildPokemon.hp > 0 && player.pokemon.hp > 0) {
+      wildPokemon.hp -= player.pokemon.attack;
+      console.log(`${player.pokemon.name} attacked! ${wildPokemon.name} HP is now ${wildPokemon.hp}`);
+      
+      if (wildPokemon.hp <= 0) {
+        console.log(`You defeated the wild ${wildPokemon.name}!`);
+        break;
+      }
+
+      player.pokemon.hp -= wildPokemon.attack;
+      console.log(`The wild ${wildPokemon.name} attacked! ${player.pokemon.name} HP is now ${player.pokemon.hp}`);
+
+      if (player.pokemon.hp <= 0) {
+        console.log(`Your ${player.pokemon.name} fainted!`);
+        break;
+      }
+    }
+  } else {
+    console.log('You have no Pokémon to battle with!');
+  }
+};
+
+// Function to start the game
+const startGame = () => {
+  console.log('Welcome to the Pokémon world! Choose your starter Pokémon: Bulbasaur, Charmander, or Squirtle.');
+};
+
+// Simulate game actions
+startGame();
+chooseStarter('Charmander');  // Player chooses Charmander
+displayStats();               // Display the chosen Pokémon stats
+battleWildPokemon();          // Battle with a wild Pokémon
